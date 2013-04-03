@@ -1,0 +1,31 @@
+﻿*         text=auto
+
+*.cs      text diff=csharp
+*.xaml    text
+
+*.htm     text diff=html
+*.html    text diff=html
+*.js      text
+*.css     text
+*.sql     text
+
+*.tt      text
+*.ps1     text
+*.cmd     text
+*.msbuild text
+*.md      text
+
+*.csproj  text merge=union
+*.sln     text merge=union eol=crlf
+
+*.tex     text diff=tex
+*.bib     text diff=bibtex
+
+# Images should be treated as binary
+# (binary is a macro for -text -diff)
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+
+*.sdf     binary
+*.exe     binary
